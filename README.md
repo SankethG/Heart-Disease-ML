@@ -61,7 +61,10 @@ After we specify the seed, we need to load in our data set. Whether it is a neur
 Next, once we give our neural network the data set, it doesn't know the inputs and outputs. So, we need to specify the which numbers represent the inputs in our data set and which number represents the output. The network will need to know the output because it will use the cost function to see how far the networks output is from the actual output and minimize the loss of the data, which will then improve the accuracy of the network.
 
 
-Now, we don't want to train all of our data in the data set as we will have no data to test the model to check how effective it is. So, from keras, we import train_test_split and tell the computer how much data should be saved for training and how much should be used for testing(generally, it is 80-20 split or 75-25 split as a majority of the data should be used for training the model, and the remaining should be used for testing it. Random_state should just 
+Now, we don't want to train all of our data in the data set as we will have no data to test the model to check how effective it is. So, from keras, we import train_test_split and tell the computer how much data should be saved for training and how much should be used for testing(generally, it is 80-20 split or 75-25 split as a majority of the data should be used for training the model, and the remaining should be used for testing it. Random_state should just ________________
+
+
+Next, we need to specify the model that we are using as well as add the layers, which are densely connected in this neural network. Keras makes this very simple, as once you import dense from keras.layers and dense from keras.models it takes a couple of lines of code to add the layers. First, you specify the model that you are using, which is sequential in this neural network. The sequential model is just a linear stack of layers, so you need to base your model of your datasets. Afterwards, you need to add all of your layers, such as the input layer, the hidden layers, and the output layer. So, you add each dense layers, but for the input layer. 
 
 
 
