@@ -16,17 +16,20 @@ Neurons and densely-connected layers
 - neural networks, also known as artificial networks, are modeled similarly to how the brain processes information. In order to visualize the neurons and the layers in the neural network, I have provided a link to a picture of its structure
 https://www.google.com/search?sa=G&hl=en&q=neural+network+dense+layer&tbm=isch&tbs=simg:CAQSlQEJEXoHkcJRnWQaiQELEKjU2AQaBAgVCAoMCxCwjKcIGmAKXggDEiZVkQhWnAiYCNIdkgj-ApkImwiWPsU9xD3AJ681wz2MKcY90DawNRow6ckWPz6CcBT_1pfDK6jsqk8vgcdo0ZJS52QPXlItVxSeIFUv1jsbZHFBhgy0D1udbIAQMCxCOrv4IGgoKCAgBEgQ7oBKQDA&ved=0ahUKEwiEhseCpe7gAhWtSt8KHX0cDNMQwg4IKCgA
 
-Neural networks have an input layer, which consists of a certain number of neurons, dependent on the network. At the end, it has an output layer, which usually consists of less neurons than the input layer. In the middle, there are layers known as hidden layers, which the network performs complex mathematical operations and propagates the data(moves forward) to the next layer.
+Neural networks have an input layer, which consists of a certain number of neurons, dependent on the network. At the end, it has an output layer, which usually consists of less neurons than the input layer. In the middle, there are layers known as hidden layers, which the network performs complex mathematical operations and propagates the data(moves forward) to the next layer. By going from layer to layer, it is able to increase its accuracy, and learn from the data. This is due to many concepts such as gradient descent and backpropogation.
 
 
 
 
 Gradient descent
+// Explain what gradient descent is
 
 
 
 
 Propagation and back propagation
+
+//explain these concepts
 
 
 
@@ -66,6 +69,15 @@ Now, we don't want to train all of our data in the data set as we will have no d
 
 Next, we need to specify the model that we are using as well as add the layers, which are densely connected in this neural network. Keras makes this very simple, as once you import dense from keras.layers and dense from keras.models it takes a couple of lines of code to add the layers. First, you specify the model that you are using, which is sequential in this neural network. The sequential model is just a linear stack of layers, so you need to base your model of your datasets. Afterwards, you need to add all of your layers, such as the input layer, the hidden layers, and the output layer. So, you add each dense layers, and need to sepcify an activation for each layer, which I will explain shortly. However, for the input layer, you need to specify the dimensions to start the network, but you do not need to specify it for any of the other layers as the other layers automatically references the dimensions from the input layer. However, for every single layer in the neural network, you need to specify the activation in which to use. To summarize, a neural network gets the input neurons, does complex mathematical operations, uses an activation function, and passes that value to the next layer, and repeats this process until the end of the network. So, for each layer, the network uses a certain activation function, such as softmax, sigmoid,relu, etc. In this instance, we will be using relu activation for each layer until the final layer, in which we will use sigmoid activation. After we perform these complex operations, we use activation to turn that number into another number, dependeing on the certain activation. For example, the relu activation turns that number into either a 0 or a 1, while sigmoid activation takes that huge number and squishes it into a value between 0 and 1. So, relu activation is more commonly used nowadays, and we wuse it as activation for every layer(except the output layer) as it allows our network to propogate accurately and become more accurate. However, we use sigmoid activation for the last layer because we want a probability of getting heart disease as our ouput, and the sigmoid activation does that as it transforms the original number after the complex mathematical operations and squishes it to a number between 0 and 1. 
 
+
+//Keep going through each line of code till done
+
+
+
+So, that is how to make a neural network to diagnose heart disease in 15 lines of code. I hope you learned new information and gained knowledge on machine learning and neural networks, and make your own neural network in the future.
+
+
+- Sanketh Gudapati
 
 
 
