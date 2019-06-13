@@ -13,8 +13,14 @@ Neural networks
 
 
 Neurons and densely-connected layers
-- neural networks, also known as artificial networks, are modeled similarly to how the brain processes information. In order to visualize the neurons and the layers in the neural network, I have provided a link to a picture of its structure
-https://www.google.com/search?sa=G&hl=en&q=neural+network+dense+layer&tbm=isch&tbs=simg:CAQSlQEJEXoHkcJRnWQaiQELEKjU2AQaBAgVCAoMCxCwjKcIGmAKXggDEiZVkQhWnAiYCNIdkgj-ApkImwiWPsU9xD3AJ681wz2MKcY90DawNRow6ckWPz6CcBT_1pfDK6jsqk8vgcdo0ZJS52QPXlItVxSeIFUv1jsbZHFBhgy0D1udbIAQMCxCOrv4IGgoKCAgBEgQ7oBKQDA&ved=0ahUKEwiEhseCpe7gAhWtSt8KHX0cDNMQwg4IKCgA
+- neural networks, also known as artificial networks, are modeled similarly to how the brain processes information. In order to visualize the neurons and the layers in the neural network, I have provided a picture of the architecture that a neural netowrk tends to follow.
+
+
+
+
+
+
+
 
 Neural networks have an input layer, which consists of a certain number of neurons, dependent on the network. At the end, it has an output layer, which usually consists of less neurons than the input layer. In the middle, there are layers known as hidden layers, which the network performs complex mathematical operations and propagates the data(moves forward) to the next layer. By going from layer to layer, it is able to increase its accuracy, and learn from the data. This is due to many concepts such as gradient descent and backpropogation.
 
@@ -22,15 +28,11 @@ Neural networks have an input layer, which consists of a certain number of neuro
 
 
 Gradient descent
-// Explain what gradient descent is
+- Gradient descent is a mathematical way to reduce the cost function. Basically, it optimizes the performance of the program by finding the minimum of a function by continuoudly moving in the negative gradient, hence the name gradient descent. We use it to update the randomly assigned parameters(weights and biases) of the program so that we can find the right ones so that our model can accurately predict the answer. 
 
 
-
-
-Propagation and back propagation
-
-//explain these concepts
-
+Backpropagation
+- Backpropogation is where you find how much a certain weight affects the functionality of the program. We adjust each weight in porportion to how much it actually affects the program. 
 
 
 If you have any other further questions regarding any of these topics, as they are very difficult to understand, I recommend watching these videos by 3Blue1Brown. He does a great job of explaining these difficult concepts.
@@ -38,7 +40,11 @@ https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-
 
 Also, for this particular neural net, I used the Cleveland data set from the UCI repository. https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data
 
-Ok, so now I am going to explain what each line of my code does, and the overall format of the neural network.
+
+
+
+
+Now I am going to explain what each line of my code does, and the overall format of the neural network.
 
 
 Structure/Architecture
