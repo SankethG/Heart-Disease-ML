@@ -17,9 +17,7 @@ Neurons and densely-connected layers
 
 
 
-
-
-
+//put picture of neural networks
 
 
 Neural networks have an input layer, which consists of a certain number of neurons, dependent on the network. At the end, it has an output layer, which usually consists of less neurons than the input layer. In the middle, there are layers known as hidden layers, which the network performs complex mathematical operations and propagates the data(moves forward) to the next layer. By going from layer to layer, it is able to increase its accuracy, and learn from the data. This is due to many concepts such as gradient descent and backpropogation.
@@ -30,13 +28,18 @@ Neural networks have an input layer, which consists of a certain number of neuro
 Gradient descent
 - Gradient descent is a mathematical way to reduce the cost function. Basically, it optimizes the performance of the program by finding the minimum of a function by continuoudly moving in the negative gradient, hence the name gradient descent. We use it to update the randomly assigned parameters(weights and biases) of the program so that we can find the right ones so that our model can accurately predict the answer. 
 
+//put picture of gradient descent
+
 
 Backpropagation
 - Backpropogation is where you find how much a certain weight affects the functionality of the program. We adjust each weight in porportion to how much it actually affects the program. 
 
+//put picture of backpropagation
+
 
 If you have any other further questions regarding any of these topics, as they are very difficult to understand, I recommend watching these videos by 3Blue1Brown. He does a great job of explaining these difficult concepts.
 https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi
+
 
 Also, for this particular neural net, I used the Cleveland data set from the UCI repository. https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/processed.cleveland.data
 
@@ -59,6 +62,8 @@ output layer- 1 node, sigmoid activation for probability
 In the beginning, we import dense layers and sequential model from the keras library, as well as numpy and h5py. If you need help downloading all the libraries, as well as tensorflow and python 3.7, here is a link to a video explaining how to do it. 
 https://www.youtube.com/watch?v=59duINoc8GM
 
+
+//input images before explanation of code
 
 Numpy_random_seed produces a random seed with a certain data for the network, so if other people used the same seed with the neural network they can reproduce the results of it.
 
