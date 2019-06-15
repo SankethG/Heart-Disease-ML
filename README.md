@@ -63,6 +63,8 @@ https://www.youtube.com/watch?v=59duINoc8GM
 
 
 
+![](images/1st.PNG)
+
 
 Numpy_random_seed produces a random seed with a certain data for the network, so if other people used the same seed with the neural network they can reproduce the results of it.
 
