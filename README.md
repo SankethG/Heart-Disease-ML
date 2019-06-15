@@ -62,7 +62,7 @@ In the beginning, we import dense layers and sequential model from the keras lib
 https://www.youtube.com/watch?v=59duINoc8GM
 
 
-//input images before explanation of code
+
 
 Numpy_random_seed produces a random seed with a certain data for the network, so if other people used the same seed with the neural network they can reproduce the results of it.
 
