@@ -16,8 +16,7 @@ Neurons and densely-connected layers
 - neural networks, also known as artificial networks, are modeled similarly to how the brain processes information. In order to visualize the neurons and the layers in the neural network, I have provided a picture of the architecture that a neural netowrk tends to follow.
 
 
-
-//put picture of neural networks
+![](images/NeuralNet.png)
 
 
 Neural networks have an input layer, which consists of a certain number of neurons, dependent on the network. At the end, it has an output layer, which usually consists of less neurons than the input layer. In the middle, there are layers known as hidden layers, which the network performs complex mathematical operations and propagates the data(moves forward) to the next layer. By going from layer to layer, it is able to increase its accuracy, and learn from the data. This is due to many concepts such as gradient descent and backpropogation.
@@ -28,13 +27,13 @@ Neural networks have an input layer, which consists of a certain number of neuro
 Gradient descent
 - Gradient descent is a mathematical way to reduce the cost function. Basically, it optimizes the performance of the program by finding the minimum of a function by continuoudly moving in the negative gradient, hence the name gradient descent. We use it to update the randomly assigned parameters(weights and biases) of the program so that we can find the right ones so that our model can accurately predict the answer. 
 
-//put picture of gradient descent
+![](images/GradientDescent.png)
 
 
 Backpropagation
 - Backpropogation is where you find how much a certain weight affects the functionality of the program. We adjust each weight in porportion to how much it actually affects the program. 
 
-//put picture of backpropagation
+![](images/BackPropagation.png)
 
 
 If you have any other further questions regarding any of these topics, as they are very difficult to understand, I recommend watching these videos by 3Blue1Brown. He does a great job of explaining these difficult concepts.
