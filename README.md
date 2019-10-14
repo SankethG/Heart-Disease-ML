@@ -98,7 +98,7 @@ Next, we need to specify the model that we are using as well as add the layers, 
 So, that is how to make a neural network to diagnose heart disease in 15 lines of code. I hope you learned new information and gained knowledge on machine learning and neural networks, and make your own neural network in the future.
 
 
-- Sanketh Gudapati
+-Sanketh Gudapati
 
 
 
