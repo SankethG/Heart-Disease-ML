@@ -68,6 +68,8 @@ https://www.youtube.com/watch?v=59duINoc8GM
 
 Numpy_random_seed produces a random seed with a certain data for the network, so if other people used the same seed with the neural network they can reproduce the results of it.
 
+![](images/2nd.PNG)
+
 
 
 After we specify the seed, we need to load in our data set. Whether it is a neural network on heart disease, diabetes, lung diseases, etc, you need to load in a data set so that your network can train and test the data.  I recommend using the UCI repository to find the data set that you need for your own neural network. The delimiter just indicates that the commas in our data set split up the data, so for example, if our data went like 30.0, 68.0, 75.0, etc,  we need to specify that the comma separates the numbers as they are different inputs or attributes. 
